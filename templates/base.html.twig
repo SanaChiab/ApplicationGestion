@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            {% block title %}Welcome!
+            {% endblock %}
+        </title>
+        
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+           <link rel="stylesheet" href= "https://cdn.jsdelivr.net/npm/bootswatch@5.1.3/dist/quartz/bootstrap.min.css">
+           <link rel="stylesheet" href= "https://cdn.jsdelivr.net/npm/bootswatch@5.1.3/dist/quartz/variables.min.css">
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+    </head>
+    <body>
+        {% block header %}
+            {% include "partials/_header.html.twig" %}
+        {% endblock %}
+        {% block body %}{% endblock %}
+    </body>
+</html>

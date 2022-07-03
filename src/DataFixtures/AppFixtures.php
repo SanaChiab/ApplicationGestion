@@ -23,7 +23,7 @@ class AppFixtures extends Fixture
         // On la persiste
         $manager->persist($formulaire);
 
-        // On la déclange l'enregistrement
+        // On la déclange l'enregistrements
         $manager->flush();
     }
 }
